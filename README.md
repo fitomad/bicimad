@@ -21,6 +21,14 @@ BiciMADClient.shared.stations() { (result: BiciMADResult) -> Void in
 }
 ```
 
+## Registro 
+
+Para poder trabajar con el API necesitas estar registrado en portal de Datos Abiertos de la EMT. Puedes acceder [desde este formulario](http://opendata.emtmadrid.es/Formulario.aspx).
+
+Una vez tengas en tu poder el correo de confirmación con tu usuario y contraseña debes editar la clase `BiciMADClient`, situarte en el inicializador de la clase y poner tu usuario y contraseña en la asignación de las variables `apiUser` y `apiPassword`
+
+
+
 ## Contacto
 
 Cualquier duda o sugerencia me puedes encontrar en twitter. [@fitomad](https://twitter.com/fitomad)
