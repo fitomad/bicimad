@@ -27,7 +27,17 @@ Para poder trabajar con el API necesitas estar registrado en portal de Datos Abi
 
 Una vez tengas en tu poder el correo de confirmación con tu usuario y contraseña debes editar la clase `BiciMADClient`, situarte en el inicializador de la clase y poner tu usuario y contraseña en la asignación de las variables `apiUser` y `apiPassword`
 
+```swift
+private init()
+{
+	self.decoder = JSONDecoder()
+	decoder.dateDecodingStrategy = .formatted(DateFormatter.bicimadISO8601)
 
+	self.baseURI = "https://rbdata.emtmadrid.es:8443/BiciMad"
+->	self.apiUser = "### TU_USUARIO_AQUÍ ###"
+->	self.apiPassword = "### TU CLAVE_AQUÍ ###"
+	...
+```
 
 ## Contacto
 
